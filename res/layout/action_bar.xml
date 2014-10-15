@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    style="@style/TitleBar"
+    android:background="@color/background_azul" >
+
+    <ImageView
+        style="@style/TitleBarLogo"
+        android:contentDescription="@string/app_name"
+        android:paddingRight="5dp"
+        android:src="@drawable/title_logo_black" 
+        />
+
+    <ImageView
+        style="@style/TitleBarSeparator"
+        android:contentDescription="@string/app_name" />
+
+    <TextView style="@style/TitleBarText" />
+
+    <ImageButton
+        android:id="@+id/action_bar_menu_principal"
+        style="@style/TitleBarAction"
+        android:contentDescription="@string/app_name"
+        android:onClick="onClickMenuPrincipal"
+        android:src="@drawable/ic_menu_principal" />
+
+    <ImageButton
+        android:id="@+id/action_bar_menu_info"
+        style="@style/TitleBarAction"
+        android:contentDescription="@string/app_name"
+        android:onClick="onCliconClickMenuInfo"
+        android:src="@drawable/ic_menu_info" />
+
+    <ImageButton
+        android:id="@+id/action_bar_menu_noticias"
+        style="@style/TitleBarAction"
+        android:contentDescription="@string/app_name"
+        android:onClick="onClickMenuNoticias"
+        android:src="@drawable/ic_action_menu_noticias" />
+    
+    <ImageButton
+        android:id="@+id/action_bar_menu_comentar"
+        style="@style/TitleBarAction"
+        android:contentDescription="@string/app_name"
+        android:onClick="onClickMenuEstrela"
+        android:src="@drawable/ic_menu_estrela" />
+
+    <ImageButton
+        android:id="@+id/action_bar_menu_email"
+        style="@style/TitleBarAction"
+        android:contentDescription="@string/app_name"
+        android:onClick="onClickMenuEmail"
+        android:src="@drawable/ic_menu_e_mail"
+        android:visibility="gone" />
+
+    <ImageButton
+        android:id="@+id/action_bar_menu_compartilhar"
+        style="@style/TitleBarAction"
+        android:contentDescription="@string/app_name"
+        android:onClick="onClickMenuCompartilhar"
+        android:src="@drawable/ic_menu_share_branco" />
+
+        <ImageButton
+        android:id="@+id/btVoltar"
+        style="@style/TitleBarAction"
+        android:contentDescription="@string/app_name"
+        android:onClick="onClickAbout"
+        
+        android:visibility="gone" />
+    
+</LinearLayout>

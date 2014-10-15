@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<TableLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/LinearLayoutMaterias"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="@color/background_azul"
+    android:orientation="horizontal" >
+
+    <TableRow
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content" >
+
+        <include
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_weight="1"
+            layout="@layout/action_bar_voltar" />
+    </TableRow>
+
+    <TableRow
+        android:layout_margin="2dp"
+         >
+
+        <ListView
+            android:id="@android:id/list"
+            android:layout_width="0dip"
+            android:layout_height="fill_parent"
+            android:layout_gravity="top"
+            android:layout_weight="1"
+            android:choiceMode="singleChoice"
+            android:clickable="true"
+            android:padding="2dp"
+            android:divider="@color/cinza"
+            android:dividerHeight="1dp"
+            android:drawSelectorOnTop="true"
+            android:drawingCacheQuality="auto"
+            android:focusableInTouchMode="false"
+            android:scrollbarStyle="insideInset" >
+        </ListView>
+    </TableRow>
+
+</TableLayout>

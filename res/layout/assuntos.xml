@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<TableLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/LinearLayoutMaterias"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="@color/background_azul" >
+
+    <include layout="@layout/action_bar_voltar" />
+
+    <ListView
+        android:id="@android:id/list"
+        android:layout_width="0dip"
+        android:layout_height="fill_parent"
+        android:layout_gravity="top"
+        android:layout_weight="1"
+        android:choiceMode="multipleChoice"
+        android:clickable="true"
+        android:divider="@color/cinza"
+        android:dividerHeight="1dp"
+        android:drawSelectorOnTop="true"
+        android:drawingCacheQuality="auto"
+        android:focusableInTouchMode="false"
+        android:scrollbarStyle="outsideInset" >
+    </ListView>
+
+    <TableLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_weight="0" 
+        android:layout_margin="3dp">
+
+        <ImageButton
+            android:id="@+id/btConfirmar"
+            style="@style/TitleBar"
+            android:layout_width="wrap_content"
+            android:layout_height="48dp"
+            android:maxLines="1" 
+            android:src="@drawable/acao_prosseguir"
+            android:contentDescription="@string/prosseguir"
+            android:background="@color/azul_claro"/>
+
+    </TableLayout>
+
+</TableLayout>

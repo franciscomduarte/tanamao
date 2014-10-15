@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="utf-8"?>
+<TableLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/LinearLayoutMaterias"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="@color/background_azul"
+    android:orientation="horizontal" >
+
+    <include
+        android:layout_width="fill_parent"
+        android:layout_gravity="fill_horizontal"
+        layout="@layout/action_bar_simulados" />
+
+    <View
+        android:layout_height="1dip"
+        android:background="@color/branco" />
+
+    <ListView
+        android:id="@android:id/list"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/background_azul"
+        android:choiceMode="singleChoice"
+        android:clickable="true"
+        android:divider="@color/cinza"
+        android:dividerHeight="1dp"
+        android:drawSelectorOnTop="true"
+        android:drawingCacheQuality="auto"
+        android:focusable="false"
+        android:focusableInTouchMode="false"
+        android:scrollbarStyle="outsideInset" >
+    </ListView>
+
+</TableLayout>

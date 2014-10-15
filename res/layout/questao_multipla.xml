@@ -1,0 +1,261 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:layout_gravity="center"
+    android:background="@color/branco"
+    android:gravity="center"
+    android:orientation="vertical" >
+
+    <TableLayout
+        android:id="@+id/TableLayout01"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@color/title_background"
+        android:stretchColumns="1" >
+
+        <TableRow
+            android:id="@+id/tableRow1"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:background="@android:color/transparent" >
+
+            <TextView
+                android:id="@+id/TotalQuestoes"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical|left"
+                android:layout_weight="1"
+                android:drawableLeft="@drawable/ic_launcher"
+                android:gravity="center"
+                android:paddingLeft="2dp"
+                android:paddingRight="2dp"
+                android:paddingTop="0dp"
+                android:text="@string/tituloQuestao"
+                android:textColor="@color/branco"
+                android:textSize="12sp"
+                android:textStyle="bold" />
+
+            <Chronometer
+                android:id="@+id/conometro"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical|right"
+                android:drawableLeft="@drawable/ic_relogio_pequeno"
+                android:drawablePadding="5dp"
+                android:format="%s"
+                android:paddingRight="5dp"
+                android:textColor="@color/branco" />
+        </TableRow>
+    </TableLayout>
+
+    <TableLayout android:id="@+id/TableLayout02"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@color/branco"
+        android:stretchColumns="1">
+
+        <TableRow
+            android:id="@+id/tableRow7"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/branco" >
+
+            <TextView
+                android:id="@+id/OrigemQuestao"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical|left"
+                android:layout_weight="1"
+                android:background="@color/branco"
+                android:gravity="center"
+                android:paddingLeft="2dp"
+                android:paddingRight="2dp"
+                android:paddingTop="0dp"
+                android:text="@string/tituloQuestao"
+                android:textColor="@color/preto"
+                android:textSize="12sp"
+                android:textStyle="normal" />
+
+            <ImageButton
+                android:id="@+id/ibComentario"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="top|right"
+                android:contentDescription="@string/app_name"
+                android:paddingRight="3dp"
+                android:background="@android:color/transparent"
+                android:src="@android:drawable/sym_action_chat"
+                android:visibility="gone" />
+        </TableRow>
+
+    </TableLayout>
+
+    <TextView
+        android:id="@+id/TextoEnunciado"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/cinza_claro"
+        android:drawableTop="@drawable/zoom"
+        android:gravity="center"
+        android:maxLines="3"
+        android:paddingLeft="2dp"
+        android:paddingTop="0dp"
+        android:text="@string/textoMultipla"
+        android:textColor="@color/preto"
+        android:textSize="15sp" 
+        android:ellipsize="end"/>
+
+    <TextView
+        android:id="@+id/TextoItemCE"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/cinza_claro"
+        android:gravity="left"
+        android:maxLines="1"
+        android:paddingLeft="2dp"
+        android:paddingTop="0dp"
+        android:textColor="@color/preto"
+        android:textSize="15sp"
+        android:textStyle="bold|italic"
+        android:visibility="gone" />
+
+    <TableLayout
+        android:id="@+id/tableLayout1"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:background="@color/background_azul"
+        android:stretchColumns="1" >
+
+        <ScrollView
+            android:id="@+id/scrollViewItens"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:layout_weight="1"
+            android:padding="3dp" >
+
+            <RadioGroup
+                android:id="@+id/radioQuestoes"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content" >
+
+                <RadioButton
+                    android:id="@+id/radio_item_a"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textColor="@color/branco"
+                    android:textSize="15sp" />
+
+                <View
+                    android:layout_height="1dp"
+                    android:background="@color/cinza_escuro"
+                    android:paddingTop="2dp" />
+
+                <RadioButton
+                    android:id="@+id/radio_item_b"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textColor="@color/branco"
+                    android:textSize="15sp" />
+
+                <View
+                    android:layout_height="1dp"
+                    android:background="@color/cinza_escuro"
+                    android:paddingTop="2dp" />
+
+                <RadioButton
+                    android:id="@+id/radio_item_c"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textColor="@color/branco"
+                    android:textSize="15sp" />
+
+                <View
+                    android:layout_height="1dp"
+                    android:background="@color/cinza_escuro"
+                    android:paddingTop="2dp" />
+
+                <RadioButton
+                    android:id="@+id/radio_item_d"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textColor="@color/branco"
+                    android:textSize="15sp" />
+
+                <View
+                    android:layout_height="1dp"
+                    android:background="@color/cinza_escuro"
+                    android:paddingTop="2dp" />
+
+                <RadioButton
+                    android:id="@+id/radio_item_e"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textColor="@color/branco"
+                    android:textSize="15sp" />
+            </RadioGroup>
+        </ScrollView>
+
+        <TableRow
+            android:layout_width="wrap_content"
+            android:layout_height="48dp"
+            android:layout_gravity="bottom"
+            android:layout_weight="0"
+            android:background="@color/branco"
+            android:gravity="center"
+            android:weightSum="3" >
+
+            <Button
+                android:id="@+id/btPular"
+                style="@style/TitleBar"
+                android:layout_width="wrap_content"
+                android:layout_height="36dp"
+                android:layout_gravity="center"
+                android:layout_marginLeft="8dp"
+                android:background="@color/branco"
+                android:drawableLeft="@drawable/ic_menu_opcoes_linha"
+                android:gravity="center"
+                android:paddingLeft="5dp"
+                android:paddingRight="5dp"
+                android:text="@string/opcoes"
+                android:textColor="@color/preto"
+                android:textSize="13sp"
+                android:textStyle="bold" />
+
+            <Button
+                android:id="@+id/btResponder"
+                style="@style/TitleBar"
+                android:layout_height="36dp"
+                android:layout_gravity="center"
+                android:layout_weight="0"
+                android:background="@color/azul_claro"
+                android:drawableLeft="@drawable/ic_prosseguir_branco"
+                android:gravity="center"
+                android:paddingLeft="5dp"
+                android:paddingRight="8dp"
+                android:text="@string/responder"
+                android:textColor="@color/branco"
+                android:textSize="13sp"
+                android:textStyle="bold" />
+
+            <Button
+                android:id="@+id/btProxima"
+                style="@style/TitleBar"
+                android:layout_width="fill_parent"
+                android:layout_height="36dp"
+                android:layout_gravity="center"
+                android:layout_marginRight="10dp"
+                android:background="@color/branco"
+                android:drawableRight="@drawable/ic_proxima"
+                android:gravity="center"
+                android:paddingLeft="5dp"
+                android:paddingRight="5dp"
+                android:text="@string/proxima"
+                android:textColor="@color/preto"
+                android:textSize="13sp"
+                android:textStyle="bold"
+                android:visibility="invisible" />
+        </TableRow>
+    </TableLayout>
+
+</LinearLayout>

@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+ <RelativeLayout  xmlns:android="http://schemas.android.com/apk/res/android"
+        android:layout_height="0dip" 
+        android:id="@+id/tableLayout10"
+        android:layout_width="wrap_content"
+        android:background="@color/azul" 
+        android:stretchColumns="1"> 
+     <ListView
+            android:id="@android:id/list" 
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="top"
+            android:divider="@color/cinza"
+            android:dividerHeight="1dp"
+            android:clickable="true"
+            android:drawSelectorOnTop="true"
+            android:drawingCacheQuality="auto"
+            android:choiceMode="singleChoice"
+            android:focusableInTouchMode="false"
+            android:focusable="false"          
+            >
+     </ListView>
+      
+     <Button
+            android:id="@+id/btExcluirSimulados"
+            android:layout_width="300dp"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:text="@string/btExcluirSimulados"
+            android:textColor="@color/preto"
+            android:textSize="15sp"
+            android:textStyle="bold"
+            android:drawableLeft="@drawable/ic_launcher"
+     />
+     
+ </RelativeLayout>
+<!-- 
+</TableLayout>
+    <TableLayout
+        android:id="@+id/tableLayout1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" 
+        android:background="@drawable/background2" android:stretchColumns="1">	
+	<View android:background="@color/branco" 
+	    android:layout_gravity="center" 
+	    android:layout_height="2dip" 
+	    android:paddingTop="4dip"/>
+    <TableRow android:gravity="center" android:background="@color/cinza">
+        <Button
+            android:id="@+id/btExcluirSimulados"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:text="@string/btExcluirSimulados"
+            android:textColor="@color/preto"
+            android:textSize="15sp"
+            android:textStyle="bold"
+             />
+	</TableRow>
+ </TableLayout>
+</LinearLayout>
+ -->
+ 
+

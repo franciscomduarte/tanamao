@@ -1,0 +1,335 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="@color/branco"
+    android:orientation="vertical" >
+
+    <include layout="@layout/action_bar_voltar" />
+
+    <HorizontalScrollView
+        android:id="@+id/horizontalScrollView1"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:background="@android:color/transparent" >
+
+        <TableRow
+            android:id="@+id/tableRow1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@color/cinza_c3c3c3" >
+
+            <TextView
+                android:id="@+id/df"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@drawable/acao_tabs_menu_principal_categorias"
+                android:padding="5sp"
+                android:text="@string/concurso_df"
+                android:textAppearance="@style/TextoTituloPesquisa"
+                android:textColor="@color/branco" />
+
+            <TextView
+                android:id="@+id/ac"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@drawable/acao_tabs_menu_principal_categorias"
+                android:padding="5sp"
+                android:text="@string/concurso_ac"
+                android:textAppearance="@style/TextoTituloPesquisa"
+                android:textColor="@color/branco" />
+
+            <TextView
+                android:id="@+id/al"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@drawable/acao_tabs_menu_principal_categorias"
+                android:padding="5sp"
+                android:text="@string/concurso_al"
+                android:textAppearance="@style/TextoTituloPesquisa"
+                android:textColor="@color/branco" />
+
+            <TextView
+                android:id="@+id/am"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@drawable/acao_tabs_menu_principal_categorias"
+                android:padding="5sp"
+                android:text="@string/concurso_am"
+                android:textAppearance="@style/TextoTituloPesquisa"
+                android:textColor="@color/branco" />
+
+            <TextView
+                android:id="@+id/ap"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@drawable/acao_tabs_menu_principal_categorias"
+                android:padding="5sp"
+                android:text="@string/concurso_ap"
+                android:textAppearance="@style/TextoTituloPesquisa"
+                android:textColor="@color/branco" />
+
+            <TextView
+                android:id="@+id/ba"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@drawable/acao_tabs_menu_principal_categorias"
+                android:padding="5sp"
+                android:text="@string/concurso_ba"
+                android:textAppearance="@style/TextoTituloPesquisa"
+                android:textColor="@color/branco" />
+
+            <TextView
+                android:id="@+id/ce"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@drawable/acao_tabs_menu_principal_categorias"
+                android:padding="5sp"
+                android:text="@string/concurso_ce"
+                android:textAppearance="@style/TextoTituloPesquisa"
+                android:textColor="@color/branco" />
+
+            <TextView
+                android:id="@+id/es"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@drawable/acao_tabs_menu_principal_categorias"
+                android:padding="5sp"
+                android:text="@string/concurso_es"
+                android:textAppearance="@style/TextoTituloPesquisa"
+                android:textColor="@color/branco" />
+
+            <TextView
+                android:id="@+id/go"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@drawable/acao_tabs_menu_principal_categorias"
+                android:padding="5sp"
+                android:text="@string/concurso_go"
+                android:textAppearance="@style/TextoTituloPesquisa"
+                android:textColor="@color/branco" />
+
+            <TextView
+                android:id="@+id/ma"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@drawable/acao_tabs_menu_principal_categorias"
+                android:padding="5sp"
+                android:text="@string/concurso_ma"
+                android:textAppearance="@style/TextoTituloPesquisa"
+                android:textColor="@color/branco" />
+
+            <TextView
+                android:id="@+id/mg"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@drawable/acao_tabs_menu_principal_categorias"
+                android:padding="5sp"
+                android:text="@string/concurso_mg"
+                android:textAppearance="@style/TextoTituloPesquisa"
+                android:textColor="@color/branco" />
+
+            <TextView
+                android:id="@+id/ms"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@drawable/acao_tabs_menu_principal_categorias"
+                android:padding="5sp"
+                android:text="@string/concurso_ms"
+                android:textAppearance="@style/TextoTituloPesquisa"
+                android:textColor="@color/branco" />
+
+            <TextView
+                android:id="@+id/mt"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@drawable/acao_tabs_menu_principal_categorias"
+                android:padding="5sp"
+                android:text="@string/concurso_mt"
+                android:textAppearance="@style/TextoTituloPesquisa"
+                android:textColor="@color/branco" />
+
+            <TextView
+                android:id="@+id/pa"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@drawable/acao_tabs_menu_principal_categorias"
+                android:padding="5sp"
+                android:text="@string/concurso_pa"
+                android:textAppearance="@style/TextoTituloPesquisa"
+                android:textColor="@color/branco" />
+
+            <TextView
+                android:id="@+id/pb"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@drawable/acao_tabs_menu_principal_categorias"
+                android:padding="5sp"
+                android:text="@string/concurso_pb"
+                android:textAppearance="@style/TextoTituloPesquisa"
+                android:textColor="@color/branco" />
+
+            <TextView
+                android:id="@+id/pe"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@drawable/acao_tabs_menu_principal_categorias"
+                android:padding="5sp"
+                android:text="@string/concurso_pe"
+                android:textAppearance="@style/TextoTituloPesquisa"
+                android:textColor="@color/branco" />
+
+            <TextView
+                android:id="@+id/pi"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@drawable/acao_tabs_menu_principal_categorias"
+                android:padding="5sp"
+                android:text="@string/concurso_pi"
+                android:textAppearance="@style/TextoTituloPesquisa"
+                android:textColor="@color/branco" />
+
+            <TextView
+                android:id="@+id/pr"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@drawable/acao_tabs_menu_principal_categorias"
+                android:padding="5sp"
+                android:text="@string/concurso_pr"
+                android:textAppearance="@style/TextoTituloPesquisa"
+                android:textColor="@color/branco" />
+
+            <TextView
+                android:id="@+id/rj"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@drawable/acao_tabs_menu_principal_categorias"
+                android:padding="5sp"
+                android:text="@string/concurso_rj"
+                android:textAppearance="@style/TextoTituloPesquisa"
+                android:textColor="@color/branco" />
+
+            <TextView
+                android:id="@+id/rn"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@drawable/acao_tabs_menu_principal_categorias"
+                android:padding="5sp"
+                android:text="@string/concurso_rn"
+                android:textAppearance="@style/TextoTituloPesquisa"
+                android:textColor="@color/branco" />
+
+            <TextView
+                android:id="@+id/ro"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@drawable/acao_tabs_menu_principal_categorias"
+                android:padding="5sp"
+                android:text="@string/concurso_ro"
+                android:textAppearance="@style/TextoTituloPesquisa"
+                android:textColor="@color/branco" />
+
+            <TextView
+                android:id="@+id/rr"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@drawable/acao_tabs_menu_principal_categorias"
+                android:padding="5sp"
+                android:text="@string/concurso_rr"
+                android:textAppearance="@style/TextoTituloPesquisa"
+                android:textColor="@color/branco" />
+
+            <TextView
+                android:id="@+id/rs"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@drawable/acao_tabs_menu_principal_categorias"
+                android:padding="5sp"
+                android:text="@string/concurso_rs"
+                android:textAppearance="@style/TextoTituloPesquisa"
+                android:textColor="@color/branco" />
+
+            <TextView
+                android:id="@+id/sc"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@drawable/acao_tabs_menu_principal_categorias"
+                android:padding="5sp"
+                android:text="@string/concurso_sc"
+                android:textAppearance="@style/TextoTituloPesquisa"
+                android:textColor="@color/branco" />
+
+            <TextView
+                android:id="@+id/se"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@drawable/acao_tabs_menu_principal_categorias"
+                android:padding="5sp"
+                android:text="@string/concurso_se"
+                android:textAppearance="@style/TextoTituloPesquisa"
+                android:textColor="@color/branco" />
+
+            <TextView
+                android:id="@+id/sp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@drawable/acao_tabs_menu_principal_categorias"
+                android:padding="5sp"
+                android:text="@string/concurso_sp"
+                android:textAppearance="@style/TextoTituloPesquisa"
+                android:textColor="@color/branco" />
+
+            <TextView
+                android:id="@+id/to"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@drawable/acao_tabs_menu_principal_categorias"
+                android:padding="5sp"
+                android:text="@string/concurso_to"
+                android:textAppearance="@style/TextoTituloPesquisa"
+                android:textColor="@color/branco" />
+        </TableRow>
+
+    </HorizontalScrollView>
+
+    <!-- <LinearLayout -->
+    <!-- android:layout_width="fill_parent" -->
+    <!-- android:layout_height="40dip" -->
+    <!-- android:background="@android:color/transparent" > -->
+
+
+    <!-- <TextView -->
+    <!-- android:layout_width="wrap_content" -->
+    <!-- android:layout_height="wrap_content" -->
+    <!-- android:layout_gravity="center" -->
+    <!-- android:layout_marginLeft="30dip" -->
+    <!-- android:layout_marginTop="2dip" -->
+    <!-- android:gravity="center" -->
+    <!-- android:textColor="#FFFFFF" -->
+    <!-- android:textSize="8pt" -->
+    <!-- android:textStyle="bold" /> -->
+    <!-- </LinearLayout> -->
+
+    <ListView
+        android:id="@android:id/list"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="top"
+        android:background="@android:color/transparent"
+        android:cacheColorHint="#00000000"
+        android:divider="@color/cinza_noticias"
+        android:dividerHeight="1dip"
+        android:paddingLeft="5pt"
+        android:paddingRight="5pt"
+        android:transcriptMode="alwaysScroll" >
+    </ListView>
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="bottom"
+        android:background="@android:color/transparent"
+        android:gravity="bottom" >
+    </LinearLayout>
+
+</LinearLayout>

@@ -1,0 +1,98 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="hello">Flaviano Oliveira Silva</string>
+    <string name="app_name">TáNaMão Bancário</string>
+    <string name="comentario">Digite seu comentário</string>
+    <string name="item_menu_procurar">Procurar Questões Montar Simulados</string>
+    <string name="item_menu_continuar">Continuar Simulados Anteriores</string>
+    <string name="item_menu_grafico">Desempenho / Estatísticas</string>
+    <string name="item_menu_compra">Estude para carreira júridica Mais de 9.000 questões</string>
+    <string name="frase_tela_inicial">Sua ferramenta para passar em concursos</string>
+    <string name="titulo_menu">Escolha uma opção no menu</string>
+    <string name="buscar">Buscar Matérias</string>
+    <string name="prosseguir">Prosseguir</string>
+    <string name="parceiros">Novidades:</string>
+    <string name="banca">Banca:</string>
+    <string name="instituicao">Instituição:</string>
+    <string name="ano">Ano:</string>
+    <string name="cargo">Cargo:</string>
+    <string name="nivel">Nível:</string>
+    <string name="tipo_questao">Tipo de questão:</string>
+    <string name="assunto">Assunto:</string>
+    <string name="superior">Superior</string>
+    <string name="medio">Médio</string>
+    <string name="sobre">O App TaNaMao é especializado em questões de concursos com simulados que podem ser acessados a qualquer hora e lugar.\n\nContato: sac@tanamaoconcursos.com.br\nwww.tanamaoconcursos.com.br</string>
+    <string name="btContinuar">Criar Simulado >></string>
+    <string name="negrito">bold</string>
+    <string name="correto">Letra "A"</string>
+    <string name="errado">estude mais.</string>
+    <string name="responder">Responder</string>
+    <string name="pular">Pular</string>
+    <string name="opcoes">Opções</string>
+    <string name="duvida">Dúvida</string>
+    <string name="comentar">Comentar</string>
+    <string name="proxima">Próxima</string>
+    <string name="tituloQuestao">TaNaMão -> Questão 1 de 35</string>
+    <string name="tituloNoticia">TITULO NOTICIA</string>
+    <string name="textoMultipla">Multipla Escolha</string>
+    <string name="textoCertoErrado">Certo ou Errado</string>
+    <string name="tamanhoFonte">Tamanho da fonte: 15px</string>
+    <string name="simuladoData">22/03/1982</string>
+    <string name="simuladoMateria">Conhecimentos Bancários (22/03/1982)</string>
+    <string name="simuladoQuestoes">10 respondidas de um total de 25 questões</string>
+    <string name="simuladoAcertos">4 acertos e 6 erros - 40% de aproveitamento</string>
+    <string name="btExcluirSimulados">Excluir Simulados</string>
+    <string name="link">www.tanamaoconcursos.com.br</string>
+    <string name="carregando">Instalando Questões</string>
+    <string name="descricaoE2f">Desenvolvimento\n\nwww.e2f.com.br</string>
+    <string name="titulo_lista_materias">::Escolha uma Matéria</string>
+    <string name="titulo_lista_simulados">:: Simulados</string>
+    <string name="acertos">Acertos</string>
+    <string name="erros">Erros</string>
+    <string name="tempoMedio">Tempo \npor questão</string>
+    <string name="tempoTotal">Tempo Total</string>
+    <string name="noticias">::Últimas notícias</string>
+    <string name="total">Total de questões</string>
+    <string name="hora">00:00</string>
+    <string name="concurso_df">DF</string>
+    <string name="concurso_sp">SP</string>
+    <string name="concurso_rj">RJ</string>
+    <string name="concurso_mg">MG</string>
+    <string name="concurso_es">ES</string>
+    <string name="concurso_pr">PR</string>
+    <string name="concurso_rs">RS</string>
+    <string name="concurso_sc">SC</string>
+    <string name="concurso_go">GO</string>
+    <string name="concurso_ms">MS</string>
+    <string name="concurso_mt">MT</string>
+    <string name="concurso_am">AM</string>
+    <string name="concurso_ac">AC</string>
+    <string name="concurso_ap">AP</string>
+    <string name="concurso_pa">PA</string>
+    <string name="concurso_ro">RO</string>
+    <string name="concurso_rr">RR</string>
+    <string name="concurso_to">TO</string>
+    <string name="concurso_al">AL</string>
+    
+    <string name="concurso_ma">MA</string>
+    <string name="concurso_pb">PB</string>
+    <string name="concurso_pe">PE</string>
+    <string name="concurso_pi">PI</string>
+    <string name="concurso_rn">RN</string>
+    <string name="concurso_se">SE</string>
+   
+    <string name="concurso_ba">BA</string>
+    <string name="concurso_ce">CE</string>
+    
+    
+    <string name="dois_pontos">::</string>
+    <string name="fonte">Tamanho da fonte: 15px</string>
+    
+    <string-array name="arrayNoticias">
+      
+    </string-array>
+        <string name="handle">Handle</string>
+    
+
+</resources>

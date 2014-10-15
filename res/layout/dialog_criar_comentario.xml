@@ -1,0 +1,94 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:background="@color/preto"
+    android:orientation="vertical" >
+
+    <TableLayout
+        android:id="@+id/tableLayout1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@color/branco"
+        android:stretchColumns="1" >
+
+        <ScrollView
+            android:id="@+id/scrollViewItens"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="0.36"
+            android:background="@color/branco"
+            android:padding="3dp" >
+
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/branco"
+                android:orientation="vertical" >
+
+                <TextView
+                    android:id="@+id/tvTituloComentario"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="top|left"
+                    android:gravity="top|left"
+                    android:lineSpacingExtra="1dp"
+                    android:lineSpacingMultiplier="1"
+                    android:padding="5dp"
+                    android:textColor="@color/cinza_noticias"
+                    android:textSize="15sp" />
+
+                <EditText
+                    android:id="@+id/txComentario"
+                    android:layout_width="fill_parent"
+                    android:layout_height="260dp"
+                    android:layout_gravity="top"
+                    android:ems="20"
+                    android:inputType="textMultiLine|textLongMessage"
+                    android:textSize="15sp" >
+
+                    <requestFocus />
+                </EditText>
+
+                
+            </LinearLayout>
+        </ScrollView>
+
+        <View
+            android:layout_height="2dip"
+            android:layout_gravity="center"
+            android:background="@color/cinza_claro"
+            android:paddingTop="4dip" />
+
+        <TableRow
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/cinza_c3c3c3"
+            android:gravity="center"
+            android:weightSum="4" >
+
+            <ImageButton
+                android:id="@+id/bt_comentario_retorno"
+                style="@style/TitleBarAction"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:contentDescription="@string/app_name"
+                android:gravity="center"
+                android:onClick="onClickAbout"
+                android:padding="4sp"
+                android:src="@android:drawable/ic_menu_revert" />
+
+            <ImageButton
+                android:id="@+id/bt_salvar_comentario"
+                style="@style/TitleBarAction"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:contentDescription="@string/app_name"
+                android:gravity="center"
+                android:onClick="onClickAbout"
+                android:padding="4sp"
+                android:src="@android:drawable/ic_menu_save" />        
+                </TableRow>
+    </TableLayout>
+
+</LinearLayout>

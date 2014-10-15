@@ -1,0 +1,100 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="@color/background_azul"
+    android:orientation="vertical" >
+
+    <include layout="@layout/action_bar" />
+
+    <ScrollView
+        android:id="@+id/scrollView1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" >
+
+        <TableLayout
+            android:id="@+id/tableLayout1"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:background="@android:color/transparent" >
+
+            <TableRow
+                android:id="@+id/tableRow1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal|center_vertical"
+                android:layout_weight="3"
+                android:baselineAligned="true"
+                android:clickable="false"
+                android:gravity="center_vertical|top|center_horizontal"
+                android:orientation="vertical" >
+
+                <ImageView
+                    android:id="@+id/ta_na_mao_logo"
+                    android:adjustViewBounds="false"
+                    android:contentDescription="@string/app_name"
+                    android:padding="5dp"
+                    android:src="@drawable/novo_logo" />
+
+            </TableRow>
+
+            <TableRow
+                android:id="@+id/tableRow3"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:gravity="center" >
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:gravity="center"
+                    android:lineSpacingExtra="3dp"
+                    android:padding="10dp"
+                    android:text="@string/sobre"
+                    android:textColor="@color/branco"
+                    android:textSize="14sp"
+                    android:textStyle="normal" />
+            </TableRow>
+
+            <TableRow
+                android:id="@+id/tableRow4"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" >
+            </TableRow>
+
+            <TableLayout
+                android:id="@+id/tableParceiros"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" >
+
+                <TableRow
+                    android:id="@+id/tableRow41"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="10dp"
+                    android:background="@android:color/white"
+                    android:clickable="true"
+                    android:gravity="center" >
+
+                    <TextView
+                        android:id="@+id/e2f"
+                        android:background="@android:color/white"
+                        android:contentDescription="@string/app_name"
+                        android:drawableBottom="@drawable/e2f"
+                        android:drawablePadding="1dp"
+                        android:padding="10dp"
+                        android:text="@string/descricaoE2f"
+                        android:textColor="@color/cinza_777" />
+                </TableRow>
+
+                <TableRow
+                    android:id="@+id/tableRow6"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" >
+                </TableRow>
+            </TableLayout>
+        </TableLayout>
+
+    </ScrollView>
+
+</LinearLayout>

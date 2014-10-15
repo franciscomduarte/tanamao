@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    style="@style/TitleBar"
+    android:background="@color/azul_claro" >
+
+    <TextView
+        android:id="@+id/botaoVoltar"
+        style="@style/TitleBarText"
+        android:layout_height="48dp"
+        android:lines="1"
+        android:onClick="onClickMenuVoltar"
+        android:text="@string/titulo_lista_materias"
+        android:textColor="@color/branco"
+        android:textSize="21sp"
+        android:textStyle="bold" />
+
+    <ImageView
+        style="@style/TitleBarSeparator"
+        android:contentDescription="@string/app_name" />
+
+    <ImageButton
+        android:id="@+id/action_bar_menu_voltar"
+        style="@style/TitleBarAction"
+        android:contentDescription="@string/app_name"
+        android:onClick="onClickMenuVoltar"
+        android:src="@drawable/ic_menu_revert" />
+
+    <ImageButton
+        android:id="@+id/action_bar_menu_proseguir"
+        style="@style/TitleBarAction"
+        android:contentDescription="@string/app_name"
+        android:onClick="onClickMenuProsseguir"
+        android:src="@drawable/ic_menu_proseguir"
+        android:visibility="gone" />
+
+</LinearLayout>

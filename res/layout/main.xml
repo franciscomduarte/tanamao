@@ -1,0 +1,165 @@
+<?xml version="1.0" encoding="utf-8"?>
+<TableLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/tableLayout1"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:layout_alignParentLeft="true"
+    android:layout_alignParentTop="true"
+    android:background="@color/background_azul"
+    android:collapseColumns="3"
+    android:shrinkColumns="2"
+    android:stretchColumns="2" >
+
+    <TableRow
+        android:id="@+id/tableRow6"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+		android:paddingTop="3dp"        
+        android:background="@color/branco" >
+
+        <TextView
+            android:id="@+id/imageView3"
+            android:layout_width="fill_parent"
+            android:layout_gravity="right"
+            android:contentDescription="@string/app_name"
+            android:drawablePadding="4dp"
+            android:drawableRight="@drawable/e2f"
+            android:gravity="center"
+            android:padding="2dp"
+            android:text="@string/descricaoE2f"
+            android:textColor="@color/cinza_escuro"
+            android:textSize="12sp" />
+
+    </TableRow>
+
+    <TableRow
+        android:id="@+id/tableRow1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:clickable="false"
+        android:gravity="center_vertical|top|center_horizontal"
+        android:orientation="vertical" >
+
+        <TextView
+            android:id="@+id/tvLogomarca"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="10dp"
+            android:layout_weight="1"
+            android:drawableTop="@drawable/novo_logo"
+            android:gravity="center"
+            android:text="@string/link"
+            android:textColor="@color/branco"
+            android:textStyle="bold" />
+
+    </TableRow>
+
+    <!-- <View -->
+    <!-- android:layout_height="1dip" -->
+    <!-- android:layout_gravity="center" -->
+    <!-- android:background="@color/verde" /> -->
+
+    <TableRow
+        android:id="@+id/tableRow2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:baselineAligned="true"
+        android:clickable="false"
+        android:orientation="vertical" >
+
+        <TextView
+            android:id="@+id/tvDescFerramenta"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="10dp"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:text="@string/frase_tela_inicial"
+            android:textColor="@color/branco"
+            android:textSize="15sp"
+            android:textStyle="bold"
+            android:typeface="normal" />
+    </TableRow>
+
+    <!-- <View -->
+    <!-- android:layout_height="1dip" -->
+    <!-- android:layout_gravity="center" -->
+    <!-- android:background="@color/cinza_claro" /> -->
+
+    <TableRow
+        android:id="@+id/tableRow3"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content" >
+
+        <ProgressBar
+            android:id="@+id/barraProgresso"
+            style="?android:attr/progressBarStyleHorizontal"
+            android:layout_width="fill_parent"
+            android:layout_margin="10dp"
+            android:layout_weight="2"
+            android:indeterminate="false"
+            android:indeterminateBehavior="repeat"
+            android:max="100"
+            android:minWidth="48dp"
+            android:paddingLeft="10dp"
+            android:progress="@android:integer/config_shortAnimTime"
+            android:progressDrawable="@android:drawable/progress_horizontal"
+            android:visibility="visible" />
+
+    </TableRow>
+
+    <TextView
+        android:id="@+id/tvBarraProgresso"
+        style="@style/TextoTituloPesquisa"
+        android:layout_width="fill_parent"
+        android:layout_margin="10dp"
+        android:layout_weight="0"
+        android:paddingLeft="10dp"
+        android:paddingRight="10dp"
+        android:text="@string/carregando"
+        android:textSize="14sp" />
+
+    <TextView
+        android:id="@+id/tvParceiros"
+        android:padding="10dp"
+        android:text="@string/parceiros"
+        android:textColor="@color/branco"
+        android:textSize="12sp"
+        android:textStyle="bold" />
+
+    <TableLayout
+        android:id="@+id/tableParceiros"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" >
+
+        <TableRow
+            android:id="@+id/tableRow4"
+            android:layout_width="wrap_content"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            android:background="@color/branco"
+            android:clickable="true"
+            android:gravity="center" >
+        </TableRow>
+
+        <TableRow
+            android:id="@+id/tableRow5"
+            android:layout_width="wrap_content"
+            android:layout_height="fill_parent"
+            android:layout_weight="1"
+            android:background="@color/branco"
+            android:gravity="center" >
+
+            <ImageView
+                android:id="@+id/imageView2"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="10dp"
+                android:layout_marginTop="10dp"
+                android:background="@color/branco"
+                android:contentDescription="@string/app_name"
+                android:src="@drawable/grupo_impresso" />
+        </TableRow>
+    </TableLayout>
+
+</TableLayout>

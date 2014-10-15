@@ -1,0 +1,179 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="@color/background_azul"
+    android:orientation="vertical" >
+
+    <include layout="@layout/action_bar_voltar" />
+
+    <TextView
+        android:id="@+id/tvTotalDeQuestoes"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_weight="0"
+        android:drawableLeft="@drawable/ic_menu_myplaces"
+        android:padding="10dp"
+        android:text="@string/total"
+        android:textColor="@color/branco"
+        android:textSize="24sp" />
+
+    <TableLayout
+        android:id="@+id/tableLayout1"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:background="@android:color/transparent" >
+
+        <TableRow
+            android:id="@+id/TableRow02"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="left"
+            android:layout_weight="10"
+            android:baselineAligned="true"
+            android:clickable="false"
+            android:gravity="center_vertical"
+            android:paddingTop="20dp" >
+        </TableRow>
+
+        <TableRow
+            android:id="@+id/tableRow1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_weight="3"
+            android:baselineAligned="true"
+            android:clickable="false"
+            android:gravity="center_vertical"
+            android:paddingTop="20dp" >
+
+            <TextView
+                android:id="@+id/tvAcertos"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:layout_weight="0"
+                android:drawableLeft="@drawable/ic_prosseguir_branco"
+                android:padding="10dp"
+                android:text="@string/acertos"
+                android:textColor="@color/branco"
+                android:textSize="20sp" />
+
+            <ProgressBar
+                android:id="@+id/ProgressBarAcertos"
+                style="?android:attr/progressBarStyleHorizontal"
+                android:layout_width="62dp"
+                android:layout_weight="1"
+                android:max="100"
+                android:padding="10dp"
+                android:progressDrawable="@drawable/progress_custom" />
+
+            <TextView
+                android:id="@+id/porcentagemAcertos"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:paddingRight="5dp"
+                android:textColor="@color/branco" />
+        </TableRow>
+
+        <TableRow
+            android:id="@+id/tableRow4"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:paddingTop="10dp" >
+
+            <TextView
+                android:id="@+id/tvErros"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:layout_weight="0"
+                android:drawableLeft="@drawable/ic_menu_close"
+                android:drawablePadding="3dp"
+                android:padding="10dp"
+                android:text="@string/erros"
+                android:textColor="@color/branco"
+                android:textSize="20sp" />
+
+            <ProgressBar
+                android:id="@+id/ProgressBarErros"
+                style="?android:attr/progressBarStyleHorizontal"
+                android:layout_width="62dp"
+                android:layout_weight="1"
+                android:max="100"
+                android:padding="10dp"
+                android:progressDrawable="@drawable/progress_custom_red" />
+
+            <TextView
+                android:id="@+id/porcentagemErros"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:paddingRight="5dp"
+                android:textColor="@color/branco" />
+        </TableRow>
+
+        <TableRow
+            android:id="@+id/TableRow01"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:paddingTop="10dp" >
+
+            <TextView
+                android:id="@+id/tvTempoMedioLabel"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="0"
+                android:drawableLeft="@drawable/ic_relogio_pequeno"
+                android:drawablePadding="5dp"
+                android:padding="10dp"
+                android:text="@string/tempoMedio"
+                android:textColor="@color/branco"
+                android:textSize="20sp" />
+
+            <TextView
+                android:id="@+id/tvTempoMedio"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:layout_weight="0"
+                android:padding="10dp"
+                android:text="@string/hora"
+                android:textColor="@color/branco"
+                android:textSize="20sp" />
+
+        </TableRow>
+
+        <TableRow
+            android:id="@+id/tableRow2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:paddingTop="10dp" >
+
+            <TextView
+                android:id="@+id/TvTempoTotalLabel"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="0"
+                android:drawableLeft="@drawable/ic_relogio_pequeno"
+                android:drawablePadding="5dp"
+                android:padding="10dp"
+                android:text="@string/tempoTotal"
+                android:textColor="@color/branco"
+                android:textSize="20sp" />
+
+            <TextView
+                android:id="@+id/tvTempoTotal"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="0"
+                android:padding="10dp"
+                android:text="@string/hora"
+                android:textColor="@color/branco"
+                android:textSize="20sp" />
+        </TableRow>
+    </TableLayout>
+
+</LinearLayout>

@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+   <menu xmlns:android="http://schemas.android.com/apk/res/android">
+      <item android:id="@+id/pular"
+         android:icon="@android:drawable/ic_menu_upload"
+         android:title="@string/pular" />
+      <item android:id="@+id/duvida"
+         android:icon="@android:drawable/ic_menu_help"
+         android:title="@string/duvida" />
+      <item android:id="@+id/comentario"
+         android:icon="@android:drawable/ic_menu_edit"
+         android:title="@string/comentar" />
+</menu>

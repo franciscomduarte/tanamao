@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    style="@style/TitleBar"
+    android:background="@color/azul_claro"
+    android:gravity="fill_vertical" >
+
+    <ImageButton
+        android:id="@+id/action_bar_menu_voltar"
+        style="@style/TitleBarAction"
+        android:contentDescription="@string/app_name"
+        android:onClick="onClickMenuVoltar"
+        android:src="@drawable/ic_menu_back" />
+
+    <TextView
+        android:id="@+id/tvTituloSimulado"
+        style="@style/TitleBarText"
+        android:layout_width="fill_parent"
+        android:layout_height="48dp"
+        android:lines="1"
+        android:onClick="onClickMenuBack"
+        android:text="@string/titulo_lista_simulados"
+        android:textColor="@color/branco"
+        android:textSize="21sp"
+        android:textStyle="bold" />
+
+    <ImageView
+        style="@style/TitleBarSeparator"
+        android:contentDescription="@string/app_name" />
+
+    <ImageButton
+        android:id="@+id/action_bar_menu_delete"
+        style="@style/TitleBarAction"
+        android:contentDescription="@string/app_name"
+        android:onClick="onClickMenuExcluir"
+        android:src="@drawable/ic_menu_delete"
+        android:visibility="visible"
+         />
+
+</LinearLayout>
