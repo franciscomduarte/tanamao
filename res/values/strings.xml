@@ -2,7 +2,7 @@
 <resources>
 
     <string name="hello">Flaviano Oliveira Silva</string>
-    <string name="app_name">TáNaMão Bancário</string>
+    <string name="app_name">TáNaMão Free Questões de Concursos</string>
     <string name="comentario">Digite seu comentário</string>
     <string name="item_menu_procurar">Procurar Questões Montar Simulados</string>
     <string name="item_menu_continuar">Continuar Simulados Anteriores</string>

@@ -1,21 +1,15 @@
 <?xml version="1.0" encoding="utf-8"?>
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
     package="br.com.tnm"
-    android:versionCode="12"
+    android:versionCode="13"
     android:versionName="4.0" >
 
     <uses-sdk
         android:minSdkVersion="7"
-        android:targetSdkVersion="7" 
-        android:maxSdkVersion="19"/>
+        android:targetSdkVersion="7" />
 
     <uses-permission android:name="android.permission.INTERNET" />
     <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
-
-    <supports-screens
-        android:largeScreens="true"
-        android:normalScreens="true"
-        android:smallScreens="true" />
 
     <uses-feature
         android:name="android.hardware.telephony"
@@ -26,6 +20,15 @@
     <uses-feature
         android:name="android.hardware.touchscreen"
         android:required="false" />
+
+    <supports-gl-texture android:name="GL_OES_compressed_ETC1_RGB8_texture" />
+    <supports-gl-texture android:name="GL_OES_compressed_paletted_texture" />
+    <supports-gl-texture android:name="GL_AMD_compressed_3DC_texture" />
+    <supports-gl-texture android:name="GL_AMD_compressed_ATC_texture" />
+    <supports-gl-texture android:name="GL_EXT_texture_compression_latc" />
+    <supports-gl-texture android:name="GL_EXT_texture_compression_dxt1" />
+    <supports-gl-texture android:name="GL_EXT_texture_compression_s3tc" />
+    <supports-gl-texture android:name="GL_IMG_texture_compression_pvrtc" />
 
     <application
         android:allowBackup="false"
