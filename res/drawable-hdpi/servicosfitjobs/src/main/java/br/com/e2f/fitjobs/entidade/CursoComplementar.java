@@ -1,7 +1,9 @@
 package br.com.e2f.fitjobs.entidade;
 
 import java.io.Serializable;
+
 import javax.persistence.*;
+
 import java.util.List;
 
 
@@ -15,6 +17,7 @@ public class CursoComplementar implements Serializable {
 	private static final long serialVersionUID = 1L;
 
 	@Id
+	@GeneratedValue(strategy=GenerationType.AUTO)
 	private Long id;
 
 	private String nome;
@@ -22,6 +25,9 @@ public class CursoComplementar implements Serializable {
 	private String local;
 
 	private Integer ano;
+	
+	@Column(name="carga_horaria")
+	private Integer cargaHoraria;
 
 	
 	public CursoComplementar() {
@@ -57,6 +63,14 @@ public class CursoComplementar implements Serializable {
 
 	public void setAno(Integer ano) {
 		this.ano = ano;
+	}
+
+	public Integer getCargaHoraria() {
+		return cargaHoraria;
+	}
+
+	public void setCargaHoraria(Integer cargaHoraria) {
+		this.cargaHoraria = cargaHoraria;
 	}
 
 

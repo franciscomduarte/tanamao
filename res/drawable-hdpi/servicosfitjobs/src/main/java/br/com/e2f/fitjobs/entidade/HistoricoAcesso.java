@@ -1,7 +1,9 @@
 package br.com.e2f.fitjobs.entidade;
 
 import java.io.Serializable;
+
 import javax.persistence.*;
+
 import java.util.Date;
 
 
@@ -15,6 +17,7 @@ public class HistoricoAcesso implements Serializable {
 	private static final long serialVersionUID = 1L;
 
 	@Id
+	@GeneratedValue(strategy=GenerationType.AUTO)
 	private Long id;
 
 	@Temporal(TemporalType.TIMESTAMP)

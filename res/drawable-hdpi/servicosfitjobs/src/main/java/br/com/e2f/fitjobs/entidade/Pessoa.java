@@ -3,13 +3,17 @@ package br.com.e2f.fitjobs.entidade;
 import java.io.Serializable;
 import java.util.Date;
 import java.util.List;
+import java.util.Set;
 
 import javax.persistence.Column;
 import javax.persistence.Entity;
+import javax.persistence.FetchType;
 import javax.persistence.GeneratedValue;
 import javax.persistence.GenerationType;
 import javax.persistence.Id;
 import javax.persistence.JoinColumn;
+import javax.persistence.JoinTable;
+import javax.persistence.ManyToMany;
 import javax.persistence.ManyToOne;
 import javax.persistence.OneToMany;
 import javax.persistence.OneToOne;
@@ -72,12 +76,15 @@ public class Pessoa implements Serializable {
 	private String tipo;
 
 	@OneToMany
+	@JoinColumn(name="pessoa_id")
 	private List<Assinatura> assinaturas;
 
-	@OneToMany
-	private List<Conhecimento> conhecimentos;
+//	@OneToMany
+//	@JoinColumn(name="pessoa_id")
+//	private List<Conhecimento> conhecimentos;
 
 	@OneToMany
+	@JoinColumn(name="pessoa_id")
 	private List<ExperienciaProfissional> experienciaProfissionals;
 
 	@OneToMany
@@ -85,6 +92,7 @@ public class Pessoa implements Serializable {
 	private List<FormacaoCurso> formacaoCursos;
 	
 	@OneToMany
+	@JoinColumn(name="pessoa_id")
 	private List<HistoricoAcesso> historicoAcessos;
 
 	@OneToOne
@@ -98,6 +106,15 @@ public class Pessoa implements Serializable {
 	@ManyToOne
 	@JoinColumn(name="curso_id")
 	private CursoSuperior cursoSuperior;
+	
+	
+	@OneToMany(fetch = FetchType.LAZY)
+	@JoinTable(name = "conhecimento", 
+	joinColumns = { @JoinColumn(name = "pessoa_id", 
+	updatable =  false) }, inverseJoinColumns = {
+	@JoinColumn(name = "modalidade_id", nullable = false, updatable = false) })
+	private List<Modalidade> modalidades;
+	
 
 	public Pessoa() {
 	}
@@ -309,12 +326,42 @@ public class Pessoa implements Serializable {
 		this.bairro = bairro;
 	}
 
-	public List<Conhecimento> getConhecimentos() {
-		return conhecimentos;
+//	public List<Conhecimento> getConhecimentos() {
+//		return conhecimentos;
+//	}
+//
+//	public void setConhecimentos(List<Conhecimento> conhecimentos) {
+//		this.conhecimentos = conhecimentos;
+//	}
+
+	public List<Modalidade> getModalidades() {
+		return modalidades;
 	}
 
-	public void setConhecimentos(List<Conhecimento> conhecimentos) {
-		this.conhecimentos = conhecimentos;
+	public void setModalidades(List<Modalidade> modalidades) {
+		this.modalidades = modalidades;
+	}
+
+	@Override
+	public int hashCode() {
+		 return id == null ? 0 : id.hashCode();
+	}
+
+	@Override
+	public boolean equals(Object obj) {
+		if (this == obj)
+			return true;
+		if (obj == null)
+			return false;
+		if (getClass() != obj.getClass())
+			return false;
+		Pessoa other = (Pessoa) obj;
+		if (id == null) {
+			if (other.id != null)
+				return false;
+		} else if (!id.equals(other.id))
+			return false;
+		return true;
 	}
 
 }

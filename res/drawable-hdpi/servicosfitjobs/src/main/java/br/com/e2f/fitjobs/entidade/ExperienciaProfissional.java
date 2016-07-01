@@ -1,7 +1,9 @@
 package br.com.e2f.fitjobs.entidade;
 
 import java.io.Serializable;
+
 import javax.persistence.*;
+
 import java.util.Date;
 
 
@@ -15,6 +17,7 @@ public class ExperienciaProfissional implements Serializable {
 	private static final long serialVersionUID = 1L;
 
 	@Id
+	@GeneratedValue(strategy=GenerationType.AUTO)
 	private Long id;
 
 	@Temporal(TemporalType.DATE)
@@ -34,10 +37,7 @@ public class ExperienciaProfissional implements Serializable {
 	@Column(name="tipo_funcao")
 	private String tipoFuncao;
 
-
-	//bi-directional many-to-one association to Funcao
-	@ManyToOne
-	private Funcao funcao;
+	private String funcao;
 
 	public ExperienciaProfissional() {
 	}
@@ -98,11 +98,7 @@ public class ExperienciaProfissional implements Serializable {
 		this.tipoFuncao = tipoFuncao;
 	}
 
-	public Funcao getFuncao() {
-		return this.funcao;
-	}
-
-	public void setFuncao(Funcao funcao) {
+	public void setFuncao(String funcao) {
 		this.funcao = funcao;
 	}
 

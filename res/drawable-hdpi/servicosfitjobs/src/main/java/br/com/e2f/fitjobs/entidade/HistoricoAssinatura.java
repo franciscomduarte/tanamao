@@ -1,6 +1,7 @@
 package br.com.e2f.fitjobs.entidade;
 
 import java.io.Serializable;
+
 import javax.persistence.*;
 
 
@@ -14,6 +15,7 @@ public class HistoricoAssinatura implements Serializable {
 	private static final long serialVersionUID = 1L;
 
 	@Id
+	@GeneratedValue(strategy=GenerationType.AUTO)
 	private Long id;
 
 	private String descricao;

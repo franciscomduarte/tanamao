@@ -1,6 +1,7 @@
 package br.com.e2f.fitjobs.entidade;
 
 import java.io.Serializable;
+
 import javax.persistence.*;
 
 
@@ -14,6 +15,7 @@ public class FormacaoCurso implements Serializable {
 	private static final long serialVersionUID = 1L;
 
 	@Id
+	@GeneratedValue(strategy=GenerationType.AUTO)
 	private Long id;
 
 	private Integer ano;
@@ -21,15 +23,11 @@ public class FormacaoCurso implements Serializable {
 	@Column(name="nome_local")
 	private String nomeLocal;
 
-	@ManyToOne
+	@OneToOne
 	@JoinColumn(name="curso_complementar_id")
 	private CursoComplementar cursoComplementar;
 
-	public FormacaoCurso() {
-	}
-
-
-
+	
 	public Integer getAno() {
 		return this.ano;
 	}
