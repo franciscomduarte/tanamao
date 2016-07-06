@@ -14,6 +14,7 @@ import javax.persistence.ManyToOne;
 import javax.persistence.NamedQuery;
 import javax.persistence.OneToMany;
 import javax.persistence.OneToOne;
+import javax.persistence.Transient;
 
 
 /**
@@ -30,16 +31,10 @@ public class Cidade implements Serializable {
 
 	private String nome;
 
-	@OneToOne
-	@JoinColumn(name="estado_id")
+	//@OneToOne(fetch=FetchType.LAZY)
+	//@JoinColumn(name="estado_id")
+	@Transient
 	private Estado estado;
-
-	@OneToMany(fetch=FetchType.LAZY)
-	@JoinColumn(name="cidade_id")
-	private Set<Bairro> bairros;
-	
-	public Cidade() {
-	}
 
 	public Long getId() {
 		return this.id;
@@ -65,12 +60,5 @@ public class Cidade implements Serializable {
 		this.estado = estado;
 	}
 
-	public Set<Bairro> getBairros() {
-		return bairros;
-	}
-
-	public void setBairros(Set<Bairro> bairros) {
-		this.bairros = bairros;
-	}
 
 }

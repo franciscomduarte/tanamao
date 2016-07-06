@@ -9,8 +9,10 @@ import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RequestMethod;
 import org.springframework.web.bind.annotation.RestController;
 
+import br.com.e2f.fitjobs.entidade.Bairro;
 import br.com.e2f.fitjobs.entidade.Cidade;
 import br.com.e2f.fitjobs.entidade.CursoComplementar;
+import br.com.e2f.fitjobs.repository.BairroRepository;
 import br.com.e2f.fitjobs.repository.CidadeRepository;
 
 @RestController
@@ -23,6 +25,14 @@ public class CidadeResource {
 	public List<Cidade> listarCidades (){
 		
 		return (List<Cidade>) cidadeRepository.findAll();
+		
+	}
+	
+	
+	@RequestMapping(value ="/{id}/bairros", method = RequestMethod.GET)
+	public List<Bairro> listarBairros (@PathVariable Long id){
+		
+		return (List<Bairro>) cidadeRepository.getBairros(id);
 		
 	}
 	

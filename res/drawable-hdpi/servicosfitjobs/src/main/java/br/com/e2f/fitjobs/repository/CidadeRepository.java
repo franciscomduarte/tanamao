@@ -16,12 +16,18 @@
 
 package br.com.e2f.fitjobs.repository;
 
+import java.util.List;
+
+import org.springframework.data.jpa.repository.Query;
 import org.springframework.data.repository.CrudRepository;
 
+import br.com.e2f.fitjobs.entidade.Bairro;
 import br.com.e2f.fitjobs.entidade.Cidade;
 
 public interface CidadeRepository extends CrudRepository<Cidade, Long> {
 
+	@Query("select b from Bairro b where b.cidade.id =?1")
+	List<Bairro> getBairros(Long idCidade);
 
 
 }

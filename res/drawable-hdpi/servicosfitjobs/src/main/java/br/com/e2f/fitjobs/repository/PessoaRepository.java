@@ -32,4 +32,7 @@ public interface PessoaRepository extends CrudRepository<Pessoa, Long> {
     void updateEndereco(@Param("endereco") String endereco, @Param("cidade") Long cidade, @Param("bairro") Long bairro, @Param("id") Long id);
 
 
+	@Query("select p from Pessoa p where p.email=:email and p.senha=:senha")
+	Pessoa verificarLogin(@Param("email") String email, @Param("senha") String senha);
+	
 }

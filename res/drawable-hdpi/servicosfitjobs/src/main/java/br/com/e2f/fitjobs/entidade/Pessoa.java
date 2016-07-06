@@ -20,6 +20,10 @@ import javax.persistence.OneToOne;
 import javax.persistence.Temporal;
 import javax.persistence.TemporalType;
 
+import br.com.e2f.fitjobs.util.CustomJsonDateDeserializer;
+
+import com.fasterxml.jackson.databind.annotation.JsonDeserialize;
+
 
 /**
  * The persistent class for the pessoa database table.
@@ -38,7 +42,7 @@ public class Pessoa implements Serializable {
 
 	private Integer cref;
 
-	@Temporal(TemporalType.TIMESTAMP)
+	@Temporal(TemporalType.DATE)
 	@Column(name="data_cadastro")
 	private Date dataCadastro;
 

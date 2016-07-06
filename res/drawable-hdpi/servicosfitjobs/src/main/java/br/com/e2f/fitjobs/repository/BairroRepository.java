@@ -16,13 +16,16 @@
 
 package br.com.e2f.fitjobs.repository;
 
+import java.util.List;
+
+import org.springframework.data.jpa.repository.Query;
 import org.springframework.data.repository.CrudRepository;
 
 import br.com.e2f.fitjobs.entidade.Bairro;
-import br.com.e2f.fitjobs.entidade.Cidade;
 
 public interface BairroRepository extends CrudRepository<Bairro, Long> {
 
+	
 
 
 }

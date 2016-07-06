@@ -12,7 +12,6 @@ import java.util.List;
  * 
  */
 @Entity
-@NamedQuery(name="Estado.findAll", query="SELECT e FROM Estado e")
 public class Estado implements Serializable {
 	private static final long serialVersionUID = 1L;
 
@@ -23,9 +22,6 @@ public class Estado implements Serializable {
 	private String nome;
 
 	private String sigla;
-
-	public Estado() {
-	}
 
 	public Long getId() {
 		return this.id;
