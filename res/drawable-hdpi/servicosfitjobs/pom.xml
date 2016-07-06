@@ -4,7 +4,7 @@
 	
 	<groupId>br.com.e2f.fitjobs</groupId>
     <artifactId>fitjobs</artifactId>
-    <version>0.0.1-SNAPSHOT</version>
+    <version>0.0.2-SNAPSHOT</version>
 	
 	<parent>
 		<!-- Your own application should inherit from spring-boot-starter-parent -->
@@ -38,7 +38,7 @@
 		<dependency>
 			<groupId>mysql</groupId>
 			<artifactId>mysql-connector-java</artifactId>
-			<version>5.1.18</version>
+			<version>5.1.6</version>
 		</dependency>
 		<dependency>
 		<groupId>io.springfox</groupId>
