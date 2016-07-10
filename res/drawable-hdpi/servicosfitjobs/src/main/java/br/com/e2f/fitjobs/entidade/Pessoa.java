@@ -19,9 +19,12 @@ import javax.persistence.OneToMany;
 import javax.persistence.OneToOne;
 import javax.persistence.Temporal;
 import javax.persistence.TemporalType;
+import javax.persistence.Transient;
 
 import br.com.e2f.fitjobs.util.CustomJsonDateDeserializer;
 
+import com.fasterxml.jackson.annotation.JsonFormat;
+import com.fasterxml.jackson.annotation.JsonIgnore;
 import com.fasterxml.jackson.databind.annotation.JsonDeserialize;
 
 
@@ -42,10 +45,12 @@ public class Pessoa implements Serializable {
 
 	private Integer cref;
 
-	@Temporal(TemporalType.DATE)
-	@Column(name="data_cadastro")
+	@Transient
+	@JsonIgnore
 	private Date dataCadastro;
 
+	//@JsonDeserialize(using=CustomJsonDateDeserializer.class)
+	@JsonFormat(pattern = "yyyy-MM-dd")
 	@Temporal(TemporalType.DATE)
 	@Column(name="data_nascimento")
 	private Date dataNascimento;
