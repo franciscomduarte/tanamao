@@ -3,7 +3,6 @@ package br.com.e2f.fitjobs.entidade;
 import java.io.Serializable;
 import java.util.Date;
 import java.util.List;
-import java.util.Set;
 
 import javax.persistence.Column;
 import javax.persistence.Entity;
@@ -13,19 +12,14 @@ import javax.persistence.GenerationType;
 import javax.persistence.Id;
 import javax.persistence.JoinColumn;
 import javax.persistence.JoinTable;
-import javax.persistence.ManyToMany;
-import javax.persistence.ManyToOne;
 import javax.persistence.OneToMany;
 import javax.persistence.OneToOne;
 import javax.persistence.Temporal;
 import javax.persistence.TemporalType;
 import javax.persistence.Transient;
 
-import br.com.e2f.fitjobs.util.CustomJsonDateDeserializer;
-
 import com.fasterxml.jackson.annotation.JsonFormat;
 import com.fasterxml.jackson.annotation.JsonIgnore;
-import com.fasterxml.jackson.databind.annotation.JsonDeserialize;
 
 
 /**
@@ -40,18 +34,13 @@ public class Pessoa implements Serializable {
 	@GeneratedValue(strategy=GenerationType.AUTO)
 	private Long id;
 
-	@Column(name="ano_termino")
-	private Integer anoTermino;
-
 	private Integer cref;
 
 	@Transient
 	@JsonIgnore
 	private Date dataCadastro;
 
-	//@JsonDeserialize(using=CustomJsonDateDeserializer.class)
-	@JsonFormat(pattern = "yyyy-MM-dd")
-	@Temporal(TemporalType.DATE)
+	@JsonFormat(pattern = "yyyy-MM-dd'T'HH:mm:ss.SSS'Z'")
 	@Column(name="data_nascimento")
 	private Date dataNascimento;
 
@@ -71,9 +60,6 @@ public class Pessoa implements Serializable {
 
 	private String segunda;
 
-	@Column(name="semestre_termino")
-	private String semestreTermino;
-
 	private String senha;
 
 	private String sexta;
@@ -88,9 +74,6 @@ public class Pessoa implements Serializable {
 	@JoinColumn(name="pessoa_id")
 	private List<Assinatura> assinaturas;
 
-//	@OneToMany
-//	@JoinColumn(name="pessoa_id")
-//	private List<Conhecimento> conhecimentos;
 
 	@OneToMany
 	@JoinColumn(name="pessoa_id")
@@ -98,7 +81,8 @@ public class Pessoa implements Serializable {
 
 	@OneToMany
 	@JoinColumn(name="pessoa_id")
-	private List<FormacaoCurso> formacaoCursos;
+	private List<Curso> cursos;
+	
 	
 	@OneToMany
 	@JoinColumn(name="pessoa_id")
@@ -111,10 +95,6 @@ public class Pessoa implements Serializable {
 	@OneToOne
 	@JoinColumn(name="bairro_id")
 	private Bairro bairro;
-
-	@ManyToOne
-	@JoinColumn(name="curso_id")
-	private CursoSuperior cursoSuperior;
 	
 	
 	@OneToMany(fetch = FetchType.LAZY)
@@ -134,14 +114,6 @@ public class Pessoa implements Serializable {
 
 	public void setId(Long id) {
 		this.id = id;
-	}
-
-	public Integer getAnoTermino() {
-		return this.anoTermino;
-	}
-
-	public void setAnoTermino(Integer anoTermino) {
-		this.anoTermino = anoTermino;
 	}
 
 	public Integer getCref() {
@@ -232,14 +204,6 @@ public class Pessoa implements Serializable {
 		this.segunda = segunda;
 	}
 
-	public String getSemestreTermino() {
-		return this.semestreTermino;
-	}
-
-	public void setSemestreTermino(String semestreTermino) {
-		this.semestreTermino = semestreTermino;
-	}
-
 	public String getSenha() {
 		return this.senha;
 	}
@@ -296,14 +260,6 @@ public class Pessoa implements Serializable {
 		this.experienciaProfissionals = experienciaProfissionals;
 	}
 
-	public List<FormacaoCurso> getFormacaoCursos() {
-		return this.formacaoCursos;
-	}
-
-	public void setFormacaoCursos(List<FormacaoCurso> formacaoCursos) {
-		this.formacaoCursos = formacaoCursos;
-	}
-
 	public List<HistoricoAcesso> getHistoricoAcessos() {
 		return this.historicoAcessos;
 	}
@@ -319,14 +275,6 @@ public class Pessoa implements Serializable {
 		this.cidade = cidade;
 	}
 
-	public CursoSuperior getCursoSuperior() {
-		return this.cursoSuperior;
-	}
-
-	public void setCursoSuperior(CursoSuperior cursoSuperior) {
-		this.cursoSuperior = cursoSuperior;
-	}
-
 	public Bairro getBairro() {
 		return bairro;
 	}
@@ -335,16 +283,16 @@ public class Pessoa implements Serializable {
 		this.bairro = bairro;
 	}
 
-//	public List<Conhecimento> getConhecimentos() {
-//		return conhecimentos;
-//	}
-//
-//	public void setConhecimentos(List<Conhecimento> conhecimentos) {
-//		this.conhecimentos = conhecimentos;
-//	}
-
 	public List<Modalidade> getModalidades() {
 		return modalidades;
+	}
+
+	public List<Curso> getCursos() {
+		return cursos;
+	}
+
+	public void setCursos(List<Curso> cursos) {
+		this.cursos = cursos;
 	}
 
 	public void setModalidades(List<Modalidade> modalidades) {

@@ -12,7 +12,6 @@ import org.springframework.web.bind.annotation.RequestMethod;
 import org.springframework.web.bind.annotation.RestController;
 
 import br.com.e2f.fitjobs.entidade.ExperienciaProfissional;
-import br.com.e2f.fitjobs.entidade.FormacaoCurso;
 import br.com.e2f.fitjobs.entidade.Pessoa;
 import br.com.e2f.fitjobs.repository.ExperienciaRepository;
 import br.com.e2f.fitjobs.repository.PessoaRepository;

@@ -11,8 +11,8 @@ import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RequestMethod;
 import org.springframework.web.bind.annotation.RestController;
 
+import br.com.e2f.fitjobs.entidade.Curso;
 import br.com.e2f.fitjobs.entidade.ExperienciaProfissional;
-import br.com.e2f.fitjobs.entidade.FormacaoCurso;
 import br.com.e2f.fitjobs.entidade.Modalidade;
 import br.com.e2f.fitjobs.entidade.Pessoa;
 import br.com.e2f.fitjobs.repository.PessoaRepository;
@@ -38,8 +38,8 @@ public class PessoaResource {
 	}
 	
 	@RequestMapping(value="/{id}/formacoesCursos", method = RequestMethod.GET)
-	public List<FormacaoCurso> listarFormacoesCurso(@PathVariable Long id) {
-		return  pessoaRepository.findOne(id).getFormacaoCursos();
+	public List<Curso> listarCursos(@PathVariable Long id) {
+		return  pessoaRepository.findOne(id).getCursos();
 
 	}
 	

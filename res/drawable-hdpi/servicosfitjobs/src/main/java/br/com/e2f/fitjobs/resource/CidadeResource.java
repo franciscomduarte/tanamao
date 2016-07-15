@@ -11,7 +11,7 @@ import org.springframework.web.bind.annotation.RestController;
 
 import br.com.e2f.fitjobs.entidade.Bairro;
 import br.com.e2f.fitjobs.entidade.Cidade;
-import br.com.e2f.fitjobs.entidade.CursoComplementar;
+import br.com.e2f.fitjobs.entidade.Curso;
 import br.com.e2f.fitjobs.repository.BairroRepository;
 import br.com.e2f.fitjobs.repository.CidadeRepository;
 
